@@ -363,11 +363,11 @@ span.fr-img-caption.fr-view {
 /*end-commonstyles library*//*begin-commonstyles library*/@charset "UTF-8";
 
 /*!
- * animate.css -https://daneden.github.io/animate.css/
- * Version - 3.7.2
+ * animate.css -http://daneden.me/animate
+ * Version - 3.7.0
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- * Copyright (c) 2019 Daniel Eden
+ * Copyright (c) 2018 Daniel Eden
  */
 
 @-webkit-keyframes bounce {
@@ -3975,14 +3975,12 @@ span.fr-img-caption.fr-view {
   animation-duration: 3s;
 }
 
-@media (print), (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion) {
   .animated {
-    -webkit-animation-duration: 1ms !important;
-    animation-duration: 1ms !important;
-    -webkit-transition-duration: 1ms !important;
-    transition-duration: 1ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
   }
 }
 /*end-commonstyles library*//*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -35222,12 +35220,12 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 131px;
+  min-height: 130px;
 }
 
 .u-header .u-image-1 {
-  width: 114px;
-  height: 64px;
+  width: 153px;
+  height: 86px;
   margin: 22px auto 0 0;
 }
 
@@ -35237,9 +35235,9 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-image-2 {
-  width: 59px;
-  height: 87px;
-  margin: -64px auto 0 179px;
+  width: 86px;
+  height: 86px;
+  margin: -86px auto 0 179px;
 }
 
 .u-header .u-logo-image-2 {
@@ -35248,7 +35246,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: -71px 0 61px auto;
+  margin: -53px 0 43px auto;
 }
 
 .u-header .u-nav-1 {
@@ -35262,17 +35260,19 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 1199px) {
   .u-header .u-image-1 {
-    width: 114px;
+    width: 153px;
   }
 
   .u-header .u-image-2 {
-    width: 59px;
+    width: 86px;
+    height: 87px;
+    margin-top: -86px;
     margin-left: 179px;
   }
 
   .u-header .u-menu-1 {
     width: auto;
-    margin-top: -71px;
+    margin-top: -52px;
     margin-right: 0;
   }
 }
